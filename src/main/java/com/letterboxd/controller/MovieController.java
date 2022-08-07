@@ -26,6 +26,7 @@ public class MovieController {
 	
 	@PostMapping("/movie/addmovie")
 	public String addMovie(@RequestBody Movie movie) {
+		//add exception try catch here later
 		return movieService.addMovie(movie);
 	}
 	
