@@ -21,6 +21,7 @@ public class MovieController {
 	
 	@GetMapping("/movie/{movieName}")
 	public Movie getMovieWithReview(@PathVariable String movieName) {
+		//add exception try catch here later
 		return movieService.getMovieWithReview(movieName);
 	}
 	
@@ -32,11 +33,13 @@ public class MovieController {
 	
 	@PutMapping("/movie/update/{movieName}")
 	public String updateMovie(@PathVariable String movieName,@RequestBody Movie movie) {
+		//add exception try catch here later
 		return movieService.updateMovie(movie);
 	}
 	
 	@DeleteMapping("/deletemovie/{movieName}")
     public String deleteMovie(@PathVariable String movieName) {
+		//add exception try catch here later
 		return movieService.deleteMovie(movieName);
 	}
     
